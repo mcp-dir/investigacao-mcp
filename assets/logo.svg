@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Investigação Cadastral">
+  <rect width="512" height="512" rx="96" fill="#FFFFFF"/>
+  <g fill="none" stroke="#7C3AED" stroke-width="20" stroke-linecap="round">
+    <path d="M256 150 a106 106 0 0 1 106 106 v44"/>
+    <path d="M256 196 a60 60 0 0 1 60 60 v58 a30 30 0 0 1 -60 0"/>
+    <path d="M210 256 a46 46 0 0 1 92 0 v52"/>
+    <path d="M150 252 a106 106 0 0 1 30 -74"/>
+    <path d="M256 256 v74"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+# Smithery configuration for Investigação Cadastral
+# Schema: https://smithery.ai/docs/build/project-config
+# Remote HTTP MCP — server hosted at https://api.mcp.ai/p_investigacao
+
+name: investigacao-mcp
+displayName: "Investigação Cadastral"
+description: >
+  Investigação cadastral de pessoas e empresas: localização (endereço/telefone/email), vínculos e relacionamentos societários, participações, beneficiário final, renda estimada, óbito e propriedade veicular. Hospedado pela plataforma, sem credenciais, pague por consulta com crédito pré-pago.
+
+version: 0.1.0
+license: MIT
+homepage: https://github.com/mcp-dir/investigacao-mcp
+repository: https://github.com/mcp-dir/investigacao-mcp
+
+tags:
+  - investigacao
+  - brazil
+  - horizontal
+  - read-only
+
+# Remote HTTP MCP — sem startCommand local (servidor já hospedado)
+startCommand:
+  type: http
+  url: https://api.mcp.ai/p_investigacao
+
+auth:
+  type: oauth2
+  resourceMetadataUrl: https://api.mcp.ai/p_investigacao/.well-known/oauth-protected-resource
+  fallback:
+    type: agent-auth
+    description: >
+      Para clientes sem OAuth 2.1. O agente expõe uma tool authenticate(token).
+      Usuário gera o JWT em https://app.mcp.ai/agent-auth e cola no chat.

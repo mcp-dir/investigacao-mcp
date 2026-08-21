@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mcp-dir/investigacao-mcp",
+  "title": "Investigação Cadastral",
+  "description": "Cadastral investigation of people and companies: location, corporate ties/relationships, participati",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/mcp-dir/investigacao-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.mcp.ai/p_investigacao"
+    }
+  ]
+}
